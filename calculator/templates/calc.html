@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffeef8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            color: #d5006d;
+            margin-bottom: 20px;
+        }
+        form {
+            padding: 20px;
+            border: 2px solid #d5006d;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            color: #d5006d;
+            margin: 10px 0;
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 10px;
+            width: 92%;
+            border: 1px solid #d5006d;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d5006d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #b0004d;
+        }
+        h2.result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #d5006d;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>Simple Calculator</h1>
+    <form id="calculatorForm" method="post">
+        {% csrf_token %}
+        <h2>Enter First Number</h2> 
+        <input type="text" name="num1" placeholder="Enter first number" required>
+        <h2>Select Operator</h2> 
+        <select name="opr">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option> 
+        </select>
+        <h2>Enter Second Number</h2> 
+        <input type="text" name="num2" placeholder="Enter second number" required>
+        <button type="submit">Calculate</button>
+    </form>
+    <h2 class="result">Result: {{ ans }}</h2>
+</div>
+
+</body>
+</html>
