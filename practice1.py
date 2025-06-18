@@ -74,15 +74,13 @@ z=int(input("enter a number"))
 print(between3(x,y,z))
 
 # 5) print table of any number
-T=int(input("enter a number"))
-list=[]
+T=int(input("enter a number for table"))
+# list=[]
 for i in range(1,11):
     cal=(T*i)
-
-    list.append(cal)
-
-
-print(list)
+    print(T, "*", i, "=", cal )
+    # list.append(cal)
+# print(list)
 
 
 

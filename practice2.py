@@ -77,7 +77,7 @@ else:
     print("Minimum:", min(num))
     print("Maximum:", max(num))
 
-# 7)convert list into desending order
+# 7)convert list into desanding order
 # i can do it with sort and reverse it but learn without sort 
 # and learn how can we sort list with user define function
 
