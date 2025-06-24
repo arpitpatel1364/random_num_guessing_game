@@ -35,7 +35,7 @@ else:
     C= (F - 32) * 5 / 9
     print(C)
 
-# 4) sort list using udf
+# 4) sort list using udf & desanding oder also in it
 l2=[]
 
 while len(l2)<=5:
@@ -50,8 +50,4 @@ for i in range(0,len(l2)):
             l2[i]=l2[j]
             l2[j]=c
 
-
 print(l2)
-
-
-
