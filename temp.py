@@ -1,21 +1,32 @@
-# 1) 10 DATA ENTRY
 def student_data():
     names = []
     rollnos = []
 
-    print("Enter data for 10 students (unique names and roll numbers only):")
+    print("Enter 10 unique students (both name and roll number must be unique):")
 
-    while len(rollnos) < 10:
-        name = input(f"Enter name for student {len(rollnos)+1}: ").strip()
-        roll = int(input("Enter roll number: "))
+    while len(names) < 10:
+        name = input(f"\nEnter student name ({len(names) + 1}/10): ")
+
 
         if name in names:
-            print(" This name already exists! Enter a unique name.")
-        elif roll in rollnos:
-            print(" This roll number already exists! Enter a unique roll number.")
-        else:
-            names.append(name)
-            rollnos.append(roll)
+            print(" Name already exists! Try entering a different name and roll number.")
+            continue
+
+        while True:
+            try:
+                roll = int(input("Enter roll number: "))
+            except ValueError:
+                print(" Invalid roll number! Please enter a valid number.")
+                continue
+
+            if roll in rollnos:
+                print(" Roll number already exists! Enter a different roll number for this name.")
+            else:
+                break
+
+        names.append(name)
+        rollnos.append(roll)
+        print(" Name and Roll number saved.")
 
     print("\n Data Entry Complete!")
     print("Names List:", names)
@@ -23,6 +34,7 @@ def student_data():
 
 
 student_data()
+
 
 
 # 3) write a program to find factorial number
