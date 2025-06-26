@@ -51,3 +51,23 @@ for i in range(0,len(l2)):
             l2[j]=c
 
 print(l2)
+
+# factorial of n
+def fact(n):
+    if n ==0 or n == 1:
+        return 1
+    else :
+        return n * fact(n - 1)
+n = int(input())
+print(fact(n))
+
+
+# sum of n numbers
+def sum(a):
+    if a==1:
+        return 1
+    else :
+        return a + sum(a-1)
+
+a=int(input())
+print(sum(a))
