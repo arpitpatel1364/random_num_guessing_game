@@ -1,9 +1,16 @@
-students=[]
+user =input("enter here ")
+li=[]
+l2=[]
 
-while len(students)<5:
-    name=input("enter student name")
-    marks=int(input("enter student marks"))
-    students.append({"name": name,"marks":marks})
+for i in user:
+    c=str(user.count(i))
+    final=c+i
+    li.append(final)
 
-print("student =", students)
+#fatch from li and print in l2
+for x in li:
+    if x not in l2:
+        l2.append(x)
+
+print(l2)
 

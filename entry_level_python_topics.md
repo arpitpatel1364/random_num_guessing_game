@@ -3,7 +3,7 @@
 ---
 
 ### 1. Python Basics
-- Syntax and indentation 
+- Syntax and indentation ✅  
 - Variables and data types ✅
 - Type casting ✅
 - Input/output (`input()`, `print()`) ✅
@@ -15,15 +15,15 @@
 ### 3. Control Flow
 - `if`, `elif`, `else` ✅
 - `for` loops, `while` loops ✅
-- `break`, `continue`, `pass` 
+- `break`, `continue`, `pass` ✅ 
 
 ### 4. Functions
 - Defining and calling functions ✅
-- Return values
+- Return values ✅
 - Default, keyword, and positional arguments
 - `*args` and `**kwargs`
-- Lambda functions
-- Inner and outer functions
+- Lambda functions ✅
+- Inner and outer functions 
 - `getdata()` & `putdata()` example functions
 
 ### 5. Data Structures
@@ -42,10 +42,10 @@
 
 ### 8. File Handling
 - `open()`, `read()`, `write()`, `with` statement
-- File modes: `'r'`, `'w'`, `'a'`, `'rb'`, `'wb'`
+- File modes: `'r'`, `'w'`, `'a'`, `'rb'`, `'wb'` ✅
 
 ### 9. Exception Handling
-- `try`, `except`, `else`, `finally`
+- `try`, `except`, `else`, `finally` 
 - `raise` and `assert`
 
 ### 10. Object-Oriented Programming (OOP)
@@ -63,7 +63,7 @@
 
 ### 12. Iterators and Generators
 - `__iter__()`, `__next__()`
-- `yield` keyword
+- `yield` keyword 
 
 ### 13. Decorators (Basic)
 - Simple decorator function

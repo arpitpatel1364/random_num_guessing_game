@@ -1,8 +1,8 @@
 import random
 
-print("Hi welcome to the arpit's game,\n This is a number guessing game.\nYou got 7 chances to guess the number. Let's start the game \n guess any number 0 to 10")
+print("Hi welcome to the arpit's game,\n This is a number guessing game.\nYou got 7 chances to guess the number. Let's start the game \n guess any number 0 to 100")
 
-number_to_guess = random.randrange(10)
+number_to_guess = random.randrange(100)
 
 chances = 7
 
